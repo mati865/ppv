@@ -1,0 +1,10 @@
+(function() {var implementors = {};
+implementors["ppv"] = [{text:"impl <a class=\"trait\" href=\"https://doc.rust-lang.org/nightly/core/marker/trait.Copy.html\" title=\"trait core::marker::Copy\">Copy</a> for <a class=\"struct\" href=\"ppv/struct.m8.html\" title=\"struct ppv::m8\">m8</a>",synthetic:false,types:["ppv::masks::m8"]},{text:"impl <a class=\"trait\" href=\"https://doc.rust-lang.org/nightly/core/marker/trait.Copy.html\" title=\"trait core::marker::Copy\">Copy</a> for <a class=\"struct\" href=\"ppv/struct.m16.html\" title=\"struct ppv::m16\">m16</a>",synthetic:false,types:["ppv::masks::m16"]},{text:"impl <a class=\"trait\" href=\"https://doc.rust-lang.org/nightly/core/marker/trait.Copy.html\" title=\"trait core::marker::Copy\">Copy</a> for <a class=\"struct\" href=\"ppv/struct.m32.html\" title=\"struct ppv::m32\">m32</a>",synthetic:false,types:["ppv::masks::m32"]},{text:"impl <a class=\"trait\" href=\"https://doc.rust-lang.org/nightly/core/marker/trait.Copy.html\" title=\"trait core::marker::Copy\">Copy</a> for <a class=\"struct\" href=\"ppv/struct.m64.html\" title=\"struct ppv::m64\">m64</a>",synthetic:false,types:["ppv::masks::m64"]},{text:"impl <a class=\"trait\" href=\"https://doc.rust-lang.org/nightly/core/marker/trait.Copy.html\" title=\"trait core::marker::Copy\">Copy</a> for <a class=\"struct\" href=\"ppv/struct.m128.html\" title=\"struct ppv::m128\">m128</a>",synthetic:false,types:["ppv::masks::m128"]},{text:"impl&lt;A:&nbsp;<a class=\"trait\" href=\"https://doc.rust-lang.org/nightly/core/marker/trait.Copy.html\" title=\"trait core::marker::Copy\">Copy</a> + SimdArray&gt; <a class=\"trait\" href=\"https://doc.rust-lang.org/nightly/core/marker/trait.Copy.html\" title=\"trait core::marker::Copy\">Copy</a> for <a class=\"struct\" href=\"ppv/struct.Simd.html\" title=\"struct ppv::Simd\">Simd</a>&lt;A&gt;",synthetic:false,types:["ppv::Simd"]},];
+
+            if (window.register_implementors) {
+                window.register_implementors(implementors);
+            } else {
+                window.pending_implementors = implementors;
+            }
+        
+})()
