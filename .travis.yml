@@ -11,7 +11,6 @@ stages:
   - android
 
 matrix:
-  fast_finish: true    
   include:
     # Android:
     - env: TARGET=x86_64-linux-android NOVERIFY=1
@@ -302,11 +301,6 @@ after_script: sleep 5
 env:
   global:
     secure: "lPHv7s6+AxQYNaFncycVFQt++Y1asQmMhOikQU1ztlP8CK7+hn2m98cg/euOJyzIOb2iJ3ZX4cGZkzw4lc59MQBByb1GtDbazQoUOzVDbVfe9BDD2f8JVoIFh1CMfjPKQ7Gg/rJqWlwrUlSd5GNxPCutKjY7qZhJuR6SQbJjlWaGN2Vd4fVCzKXz8fHRXgMEZS+d+CR4Nsrkb83J3Z4s5kSdJmhYxJ61AWjuzJVwUh4l3/HEYlSL5XXpuh5R2i7W16h1PlNdaTUgkZli1lHzO8+6Q8LzX9+XiLIEVX9lw3A2NdIKGz8E/+7Qs5oYOkwYhjROsDQxIK7xkSM30bQuN7cwMBybAVIyOPJkqXQ1dQyp83KSdsOj7JMyDDRvcEDLI6ehRlm5EcdH7YrReuboN81iUo0Sa7VsuUmgj5hjERCt9r30f9aWuitABai7vKRtjglg7Sp5CrEVPA4PQs6PqKCCRogoggbXJ/Z5Dyw/RZaXPeNR9+qIKN1Vjm9Gew1sRN2JK/3+vXTKtyJXH/uBxgJt4jQlbuShOJuF+BSfTF88sMe67a/357SSOIb4JkaCyd0flDCWYE8576kaHPlVVMT2peXee0LeRXm1e13nG3Na0t3LS/orJLPHOShNQGoDj7qAP5aEKggRya896JGwtvlaBHHTmSQh65G7cyNErZo="
-branches:
-  only:
-    - staging # bors r+
-    - trying  # bors try
-    - master
 notifications:
   email:
     on_success: never
