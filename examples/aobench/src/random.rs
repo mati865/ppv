@@ -11,6 +11,7 @@
 /// Scalar pseudo random number generator
 pub mod scalar {
     use std::cell::UnsafeCell;
+    use std::clone::Clone;
     use std::rc::Rc;
 
     // Note: This implementation could be vectorized using an `u32x4`.
@@ -67,7 +68,7 @@ pub mod scalar {
 
     pub fn thread_rng() -> RngH {
         RngH {
-            rng: THREAD_RNG_KEY.with(|t| t.clone()),
+            rng: THREAD_RNG_KEY.with(Clone::clone),
         }
     }
 }
@@ -134,7 +135,7 @@ pub mod vector {
 
     pub fn thread_rng() -> RngH {
         RngH {
-            rng: THREAD_RNG_KEY.with(|t| t.clone()),
+            rng: THREAD_RNG_KEY.with(Clone::clone),
         }
     }
 }
