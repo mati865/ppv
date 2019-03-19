@@ -145,10 +145,6 @@ macro_rules! impl_reduction_float_arithmetic {
                     #[allow(unused_mut)]
                     // ^^^ FIXME: https://github.com/rust-lang/rust/issues/55344
                     fn sum_nan() {
-                        // FIXME: https://bugs.llvm.org/show_bug.cgi?id=36732
-                        // https://github.com/rust-lang-nursery/packed_simd/issues/6
-                        return;
-
                         let n0 = crate::$elem_ty::NAN;
                         let v0 = $id::splat(-3.0);
                         for i in 0..$id::lanes() {
@@ -176,10 +172,6 @@ macro_rules! impl_reduction_float_arithmetic {
                     #[allow(unused_mut)]
                     // ^^^ FIXME: https://github.com/rust-lang/rust/issues/55344
                     fn product_nan() {
-                        // FIXME: https://bugs.llvm.org/show_bug.cgi?id=36732
-                        // https://github.com/rust-lang-nursery/packed_simd/issues/6
-                        return;
-
                         let n0 = crate::$elem_ty::NAN;
                         let v0 = $id::splat(-3.0);
                         for i in 0..$id::lanes() {
