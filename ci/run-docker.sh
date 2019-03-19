@@ -31,7 +31,8 @@ run() {
 
 if [ -z "${TARGET}" ]; then
   for d in `ls ci/docker/`; do
-    run $d
+    TARGET=$d
+    run $TARGET
   done
 else
   run ${TARGET}
